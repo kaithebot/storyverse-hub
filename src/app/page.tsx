@@ -8,6 +8,7 @@ import ExitModal from './components/ExitModal';
 import TrustBadges from './components/TrustBadges';
 
 import CountdownTimer from './components/CountdownTimer';
+import LiveChat from './components/LiveChat';
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -294,6 +295,7 @@ export default function Home() {
       </footer>
       <ExitModal />
       <StickyCTA />
+      <LiveChat />
     </main>
   );
 }
