@@ -7,6 +7,7 @@ import ComparisonTable from './components/ComparisonTable';
 import ExitModal from './components/ExitModal';
 import TrustBadges from './components/TrustBadges';
 
+import CountdownTimer from './components/CountdownTimer';
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -14,6 +15,7 @@ export default function Home() {
       <div className="bg-gradient-to-r from-pink-600 to-purple-600 text-white text-center py-3 px-4 font-semibold animate-pulse">
         🎉 Limited Time: 50% OFF your first story! Offer ends in 24 hours →
       </div>
+        <div className="mt-2"><CountdownTimer /></div>
 
       {/* Navigation */}
       <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
