@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import MobileMenu from './components/MobileMenu';
 
 export default function Home() {
   return (
@@ -16,12 +17,8 @@ export default function Home() {
               StoryVerse Hub
             </Link>
             
-            {/* Mobile Menu Button */}
-            <button className="md:hidden p-2">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+            {/* Mobile Menu Component */}
+            <MobileMenu />
 
             <div className="hidden md:flex space-x-8 items-center">
               <Link href="/how-it-works" className="text-gray-700 hover:text-indigo-600 font-medium transition">How It Works</Link>
