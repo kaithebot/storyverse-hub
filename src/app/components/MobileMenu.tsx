@@ -14,11 +14,12 @@ export default function MobileMenu() {
   ];
 
   return (
-    <div className="md:hidden">
+    <div className="md:hidden relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="p-2 text-gray-700 hover:text-indigo-600 transition"
+        className="p-2 text-gray-700 hover:text-indigo-600 transition z-50 relative"
         aria-label="Toggle menu"
+        type="button"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           {isOpen ? (
@@ -30,7 +31,7 @@ export default function MobileMenu() {
       </button>
 
       {isOpen && (
-        <div className="absolute top-16 left-0 right-0 bg-white border-b border-gray-200 shadow-lg z-50">
+        <div className="absolute top-full left-0 right-0 bg-white border-b border-gray-200 shadow-xl z-50 mt-0">
           <nav className="flex flex-col p-4 space-y-2">
             {navLinks.map((link) => (
               <Link
