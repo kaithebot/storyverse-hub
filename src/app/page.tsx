@@ -1,5 +1,9 @@
 import Link from 'next/link';
 import MobileMenu from './components/MobileMenu';
+import StickyCTA from './components/StickyCTA';
+import LeadMagnet from './components/LeadMagnet';
+import PAS from './components/PAS';
+import ExitModal from './components/ExitModal';
 
 export default function Home() {
   return (
@@ -121,6 +125,7 @@ export default function Home() {
         </div>
       </section>
 
+      <PAS />
       {/* How It Works */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -240,6 +245,11 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <LeadMagnet />
+        </div>
+      </section>
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -276,6 +286,8 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      <ExitModal />
+      <StickyCTA />
     </main>
   );
 }
