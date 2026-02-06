@@ -4,7 +4,8 @@ const nextConfig: NextConfig = {
   output: 'export',
   distDir: 'docs',
   images: { unoptimized: true },
-  assetPrefix: '.',
+  basePath: '/storyverse-hub',
+  assetPrefix: '/storyverse-hub/',
 };
 
 export default nextConfig;
