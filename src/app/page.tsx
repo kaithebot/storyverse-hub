@@ -3,7 +3,9 @@ import MobileMenu from './components/MobileMenu';
 import StickyCTA from './components/StickyCTA';
 import LeadMagnet from './components/LeadMagnet';
 import PAS from './components/PAS';
+import ComparisonTable from './components/ComparisonTable';
 import ExitModal from './components/ExitModal';
+import TrustBadges from './components/TrustBadges';
 
 export default function Home() {
   return (
@@ -126,6 +128,7 @@ export default function Home() {
       </section>
 
       <PAS />
+      <ComparisonTable />
       {/* How It Works */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -251,6 +254,7 @@ export default function Home() {
         </div>
       </section>
       {/* Footer */}
+      <TrustBadges />
       <footer className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-12">
